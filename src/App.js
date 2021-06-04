@@ -13,7 +13,7 @@ function App() {
       <div className="header">
 
         <div className="header_logotype">
-          <div className="header_logotext">GoWatch</div>
+          <div className="header_logotext">GoShare</div>
         </div>
 
         <div className="searchform">
