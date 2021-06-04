@@ -1,0 +1,26 @@
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid black;
+  }
+  
+  .categories_header{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .categories{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  }
+  
+  .categories ul{
+    position: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+  }
+  
