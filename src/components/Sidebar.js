@@ -1,9 +1,7 @@
 
-import './../App.css';
-import './../header.css';
-import './../content.css';
-import './../sidebar.css';
-import './../footer.css';
+import './../css/App.css';
+import './../css/sidebar.css';
+
 
 function Sidebar() {
   return (
@@ -19,11 +17,11 @@ function Sidebar() {
 
           <div className="categories">
             <ul>
-              <li>Юмор</li>
-              <li>Животные</li>
-              <li>Спорт</li>
-              <li>Игры</li>
-              <li>Музыка</li>
+              <li><a href="/Humours">Юмор</a></li>
+              <li><a href="/Animals">Животные</a></li>
+              <li><a href="/Sport">Спорт</a></li>
+              <li><a href="/Games">Игры</a></li>
+              <li><a href="/Music">Музыка</a></li>
             </ul>
           </div>
 

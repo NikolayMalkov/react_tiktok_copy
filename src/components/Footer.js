@@ -1,9 +1,6 @@
 
-import './../App.css';
-import './../header.css';
-import './../content.css';
-import './../sidebar.css';
-import './../footer.css';
+import './../css/App.css';
+import './../css/footer.css';
 
 function Footer() {
   return (

@@ -1,0 +1,17 @@
+
+
+.content{
+  grid-area: content;
+  padding: 20px;
+}
+
+.lenta{
+  
+}
+
+.post{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  margin: 20px;
+}

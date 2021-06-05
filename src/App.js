@@ -1,9 +1,9 @@
 
-import './App.css';
-import './header.css';
-import './content.css';
-import './sidebar.css';
-import './footer.css';
+import './css/App.css';
+import './css/header.css';
+import './css/content.css';
+import './css/sidebar.css';
+import './css/footer.css';
 import './components/Content.js';
 import Content from './components/Content';
 import Footer from './components/Footer';
