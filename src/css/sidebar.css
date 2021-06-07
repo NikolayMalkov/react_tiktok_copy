@@ -2,7 +2,6 @@
     grid-area: sidebar;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid black;
   }
   
   .categories_header{
@@ -11,16 +10,40 @@
   }
   
   .categories{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
+    display: flex; 
   }
   
   .categories ul{
-    position: center;
+    position: left;
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 30px;
   }
-  
+.listStyle a{
+  color: rgb(53, 170, 185);
+  text-decoration: none;
+}
+.listStyle a.active{
+  color: red;
+  font-weight: 1000;
+}
+.listStyle a:hover{
+  font-weight: 1000;
+}
+
+.user_menu{
+  display: flex; 
+  margin-top: 50px; 
+  }
+  .user_menu ul{
+      list-style-type: none;
+      position: left;
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+  }
+
+.NavLink .active{
+  color: red;
+}

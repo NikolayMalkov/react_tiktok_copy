@@ -1,0 +1,32 @@
+.dialogs-area{
+    display: grid;
+    grid-template-columns: 5fr 10fr;
+    
+}
+.dialogs-list ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+.dialogs-list ul li:hover{
+    background-color:rgb(189, 216, 228);
+    
+}    
+
+.dialogs-list ul li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 5px;
+}
+
+.dialogs-list{
+    
+    display: flex;
+}
+
+.dialog-user{
+    display: flex;
+    align-items: center;
+}

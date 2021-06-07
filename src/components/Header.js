@@ -1,22 +1,26 @@
 
 import './../css/App.css';
 import './../css/header.css';
+import { FaSearch } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+
 
 function Header() {
   return (
 
     
     <div className="header">
+      
 
     <div className="header_logotype">
-      <div className="header_logotext">GoShare</div>
+      <div className="header_logotext"><NavLink to="/Related">GoShare</NavLink></div>
     </div>
 
     <div className="searchform">
 
       <form action="" method="get">
         <input name="s" placeholder="Введите запрос" type="search" className="searchinput"></input>
-        <button className="searchbtn" type="submit">Поиск</button>
+        <button className="searchbtn" type="submit"><FaSearch /></button>
       </form>
 
 

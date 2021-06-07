@@ -11,7 +11,7 @@ function Related() {
     
     <div className="content" >
         <div className="lenta">
-      
+            this Related
         </div>
     </div>
 
