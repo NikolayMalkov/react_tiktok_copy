@@ -1,6 +1,4 @@
 
-import './../../css/App.css';
-import './../../css/header.css';
 import './../../css/content.css';
 
 

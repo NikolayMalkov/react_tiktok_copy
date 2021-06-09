@@ -1,47 +1,63 @@
 
-import './../../css/App.css';
-import './../../css/header.css';
 import './../../css/content.css';
+import { NavLink } from 'react-router-dom';
 
 
-function Sport() {
+function Messages(props) {
+
+  const DialogItem = (props) => {
+
+    return (
+      <NavLink to={"/Messages/" + props.id}>
+        <li>
+        <div className="dialog-user">
+          {<img src={props.img}></img>}
+          {props.name}
+        </div>
+        </li>
+      </NavLink>
+    )
+
+  }
+
+  const Msg = (props) => {
+    return (   
+        <div className="dialog-message">
+        {props.msgtext}
+      </div>
+    )
+  }
+
+  
+  let dialogsElements = props.Dialogs.map( d => <DialogItem name={d.name} id={d.id} />);
+
+  let messagesElements = props.messages.map( m => <Msg msgtext={m.msgtext} />);
+
+
   return (
 
-    
-    <div className="content" >
-        <div className="dialogs-area">
-          <div className="dialogs-list">
-              <ul>
-                <li>
-                  <div className="dialog-user">
-                  <img src="https://lookw.ru/8/828/1476173404-1.jpg"></img>Мистер кот1
-                  </div>
-                </li>
-                <li>
-                  <div className="dialog-user">
-                  <img src="https://lookw.ru/8/828/1476173404-1.jpg"></img>Мистер кот2
-                  </div>
-                </li>
-                <li>
-                  <div className="dialog-user">
-                  <img src="https://lookw.ru/8/828/1476173404-1.jpg"></img>Мистер кот3
-                  </div>
-                </li>
-                <li>
-                  <div className="dialog-user">
-                  <img src="https://lookw.ru/8/828/1476173404-1.jpg"></img>Мистер кот4
-                  </div>
-                </li>
-              </ul>
-          </div>
-          <div className="dialog">
 
-          </div>
+    <div className="content" >
+      <div className="dialogs-area">
+        <div className="dialogs-list">
+          <ul>
+            
+            {dialogsElements}
+            
+            
+          </ul>
         </div>
+        <div className="dialog">
+            
+             {messagesElements}
+          
+        </div>
+      </div>
     </div>
 
 
   );
 }
 
-export default Sport;
+export default Messages;
+

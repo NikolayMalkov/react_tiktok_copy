@@ -12,7 +12,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
 
     <BrowserRouter>
@@ -27,7 +27,7 @@ function App() {
 
           <Sidebar />
 
-          <Content />
+          <Content Videos={props.Videos} Dialogs={props.Dialogs} messages={props.messages} />
 
           <Footer />
 

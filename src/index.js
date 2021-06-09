@@ -5,11 +5,31 @@ import App from './App';
 import "@fontsource/nunito"
 import reportWebVitals from './reportWebVitals';
 
+let Videos = [
+  { id: 1, name: "Nikolay" },
+  { id: 2, name: "Katya" },
+  { id: 3, name: "Thomas" }
+]
 
+let Dialogs = [
+  { id: 1, name: "Nikolay" },
+  { id: 2, name: "Katya" },
+  { id: 3, name: "Thomas" }
+]
+
+let messages = [
+
+  { id: 1, msgtext: "Hello world!" },
+  { id: 2, msgtext: "Я пукаю" },
+  { id: 3, msgtext: "KEK" },
+
+]
 
 ReactDOM.render(
+  
   <React.StrictMode>
-    <App />
+    
+    <App Videos={Videos} Dialogs={Dialogs} messages={messages} />
   </React.StrictMode>,
   document.getElementById('root')
 );
