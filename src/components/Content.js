@@ -26,8 +26,8 @@ function Content(props) {
           <Route path='/Games' component={Games} />
           <Route path='/Music' component={Music} />
           <Route path='/Related' component={Related} />
-          <Route path='/Messages' render= { () => <Messages Dialogs={props.Dialogs} messages={props.messages} /> } />
-          <Route path='/Profile' render= { () => <Profile Videos={props.Videos} /> } />
+          <Route path='/Messages' render= { () => <Messages dialogs={props.state} messages={props.state} /> } />
+          <Route path='/Profile' render= { () => <Profile videos={props.state} /> } />
         </div>
     </div>
     

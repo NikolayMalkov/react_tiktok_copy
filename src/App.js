@@ -27,7 +27,7 @@ function App(props) {
 
           <Sidebar />
 
-          <Content Videos={props.Videos} Dialogs={props.Dialogs} messages={props.messages} />
+          <Content state={props.state} />
 
           <Footer />
 

@@ -11,7 +11,7 @@ function Profile(props) {
     return (   
         <div className="myPost">
         {props.name}
-        
+        {props.likesCount}
       </div>
     )
   }
@@ -19,7 +19,7 @@ function Profile(props) {
 
 
 
-  let videosElements = props.Videos.map( v => <VideoPost name={v.name} key={v.id} />);
+  let videosElements = props.videos.profilePage.Videos.map( v => <VideoPost name={v.name} key={v.id} likesCount={v.likesCount}/>);
 
   
 

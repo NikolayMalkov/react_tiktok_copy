@@ -29,9 +29,9 @@ function Messages(props) {
   }
 
   
-  let dialogsElements = props.Dialogs.map( d => <DialogItem name={d.name} id={d.id} />);
+  let dialogsElements = props.dialogs.dialogsPage.Dialogs.map( d => <DialogItem name={d.name} id={d.id} />);
 
-  let messagesElements = props.messages.map( m => <Msg msgtext={m.msgtext} />);
+  let messagesElements = props.messages.dialogsPage.messages.map( m => <Msg msgtext={m.msgtext} />);
 
 
   return (
