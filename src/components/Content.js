@@ -2,15 +2,15 @@
 import './../css/App.css';
 import './../css/content.css';
 
-import Post from './../components/Post.js';
 import Animals from './../components/content_sheets/Animals';
 import Games from './../components/content_sheets/Games';
 import Humours from './../components/content_sheets/Humours';
 import Music from './../components/content_sheets/Music';
 import Sport from './../components/content_sheets/Sport';
 import Related from './../components/content_sheets/Related';
-import Messages from './../components/content_sheets/Messages';
-import Profile from './../components/content_sheets/Profile';
+import MessagesContainer from './../components/content_sheets/MessagesContainer';
+import ProfileContainer from './../components/content_sheets/ProfileContainer';
+import UsersContainer from './../components/content_sheets/UsersContainer';
 import {Route} from "react-router-dom";
 
 function Content(props) {
@@ -26,8 +26,9 @@ function Content(props) {
           <Route path='/Games' component={Games} />
           <Route path='/Music' component={Music} />
           <Route path='/Related' component={Related} />
-          <Route path='/Messages' render= { () => <Messages dialogs={props.state} messages={props.state} /> } />
-          <Route path='/Profile' render= { () => <Profile videos={props.state} /> } />
+          <Route path='/Messages' render= { () => <MessagesContainer state={props.state}  dispatch={props.dispatch} /> } />
+          <Route path='/Profile' render= { () => <ProfileContainer state={props.state}  dispatch={props.dispatch} /> } />
+          <Route path='/Users' render= { () => <UsersContainer state={props.state}  dispatch={props.dispatch} /> } />
         </div>
     </div>
     

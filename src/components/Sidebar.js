@@ -31,6 +31,7 @@ function Sidebar() {
         <div className="user_menu">
             <ul className="listStyle">
               <li><NavLink to="/Profile">Моя страница</NavLink></li>
+              <li><NavLink to="/Users">Пользователи</NavLink></li>
               <li><NavLink to="/Messages">Сообщения</NavLink></li>
             </ul>
         </div>

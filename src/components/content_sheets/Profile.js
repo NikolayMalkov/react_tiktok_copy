@@ -3,9 +3,9 @@ import './../../index.js';
 
 
 
-
-
 function Profile(props) {
+
+
 
   const VideoPost = (props) => {
     return (   
@@ -16,12 +16,14 @@ function Profile(props) {
     )
   }
 
+  let videosElements = props.Videos.map( videopost => <VideoPost name={videopost.name} 
+    key={videopost.id} likesCount={videopost.likesCount}/>);
 
+  let sendNewPost = () => {
+    props.newPost();
+  }
 
-
-  let videosElements = props.videos.profilePage.Videos.map( v => <VideoPost name={v.name} key={v.id} likesCount={v.likesCount}/>);
-
-  
+ 
 
   return (
 
@@ -32,8 +34,14 @@ function Profile(props) {
           <div className="user-nickname">nickname</div>
         </div>
         <div className="user-descr">
-          описание профиля
-      </div>
+          <div className="descr">
+          Описание
+          </div>
+          <div className="add-post-btn">
+            <button type="button" onClick={sendNewPost}>Добавить видео</button>
+          </div>
+        </div>
+      
       </div>
 
 
