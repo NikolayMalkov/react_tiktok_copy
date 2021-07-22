@@ -1,11 +1,13 @@
 import './../../css/profile.css';
 import './../../index.js';
+import Preloader from '../../common/Preloader';
+
 
 
 
 function Profile(props) {
 
-
+ 
 
   const VideoPost = (props) => {
     return (   
@@ -16,14 +18,16 @@ function Profile(props) {
     )
   }
 
-  let videosElements = props.Videos.map( videopost => <VideoPost name={videopost.name} 
+  let videosElements = props.state.Videos.map( videopost => <VideoPost name={videopost.name} 
     key={videopost.id} likesCount={videopost.likesCount}/>);
 
   let sendNewPost = () => {
-    props.newPost();
+    props.state.newPost();
   }
 
- 
+ if (!props.state.profileInfo) {
+   return <Preloader />
+ }
 
   return (
 
@@ -31,11 +35,12 @@ function Profile(props) {
       <div className="header-profile">
         <div className="user-avatar">
           <img src="https://i.pinimg.com/originals/6a/e7/f3/6ae7f382c0bdd7c0306fb5d5c8982418.jpg" alt="" />
-          <div className="user-nickname">nickname</div>
+          <div className="user-nickname">{props.state.profileInfo.fullName}</div>
         </div>
         <div className="user-descr">
           <div className="descr">
-          Описание
+          {props.state.profileInfo.aboutMe}
+          
           </div>
           <div className="add-post-btn">
             <button type="button" onClick={sendNewPost}>Добавить видео</button>

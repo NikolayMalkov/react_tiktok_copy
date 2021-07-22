@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
 
-function Header() {
+function Header(props) {
   return (
 
     
@@ -29,9 +29,13 @@ function Header() {
 
     <div className="login">
 
-      <button className="loginbtn">Войти</button>
+    <div>{props.login}</div>
+
+      <NavLink to="/login">  <button className="loginbtn"> Войти </button> </NavLink>
+  
 
     </div>
+    
   </div>
 
 

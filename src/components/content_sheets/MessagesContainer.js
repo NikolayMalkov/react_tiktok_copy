@@ -3,8 +3,8 @@ import './../../css/content.css';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
 import { connect } from 'react-redux';
-import { AddSendMessageCreator } from '../../dialogsPage_reducer';
-import { UpdateMessageCreator } from '../../dialogsPage_reducer';
+import { AddSendMessageCreator } from '../../store/dialogsPage_reducer';
+import { UpdateMessageCreator } from '../../store/dialogsPage_reducer';
 import Messages from './Messages.js';
 
  

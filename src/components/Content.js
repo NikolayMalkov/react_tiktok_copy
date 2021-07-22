@@ -27,7 +27,7 @@ function Content(props) {
           <Route path='/Music' component={Music} />
           <Route path='/Related' component={Related} />
           <Route path='/Messages' render= { () => <MessagesContainer state={props.state}  dispatch={props.dispatch} /> } />
-          <Route path='/Profile' render= { () => <ProfileContainer state={props.state}  dispatch={props.dispatch} /> } />
+          <Route path='/Profile/:userId?' render= { () => <ProfileContainer state={props.state}  dispatch={props.dispatch} /> } />
           <Route path='/Users' render= { () => <UsersContainer state={props.state}  dispatch={props.dispatch} /> } />
         </div>
     </div>

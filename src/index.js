@@ -2,7 +2,7 @@
 import './index.css';
 import "@fontsource/nunito"
 import reportWebVitals from './reportWebVitals';
-import Store from './redux-state.js';
+import Store from './store/redux-state';
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';

@@ -8,7 +8,7 @@ import './index.css';
 import './components/Content.js';
 import Content from './components/Content';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import HeaderContainer from './components/HeaderContainer';
 import Sidebar from './components/Sidebar';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function App(props) {
     <BrowserRouter>
       <div className="wrapper">
 
-        <Header />
+        <HeaderContainer />
 
         <div className="grid-wrapper">
 

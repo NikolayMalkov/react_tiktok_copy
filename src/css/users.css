@@ -29,3 +29,11 @@
     margin: 0 auto;
     display: block;
 }
+
+.changeActive{
+    font-weight: bold;
+}
+
+span{
+    cursor: pointer;
+}
